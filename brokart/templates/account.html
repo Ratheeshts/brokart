@@ -1,0 +1,36 @@
+{% extends 'blank_layout.html' %}
+{% block banner %}
+{% include 'account_banner.html' %}
+
+ {% endblock banner %}
+ {% block content %}
+ <!-- Feadtued Categories -->
+ {% block extra_scripts %}
+ <script>
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+    function register() {
+        RegForm.style.transform = "translatex(0px)";
+        LoginForm.style.transform = "translatex(0px)";
+        Indicator.style.transform = "translateX(100px)";
+
+    }
+    function login() {
+        RegForm.style.transform = "translatex(300px)";
+        LoginForm.style.transform = "translatex(300px)";
+        Indicator.style.transform = "translate(0px)";
+
+    }
+</script>
+{% if register %}
+    <script>
+        register()
+    </script>
+    {% else %}
+    <script>
+        login()
+    </script>
+    {% endif %}
+    {% endblock %}
+ {% endblock content %}
