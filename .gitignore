@@ -45,10 +45,6 @@ Thumbs.db
 *.mov
 *.wmv
 /images/
-/media/
-/payments/migrations/
-/*/migrations/
-/coupen/migrations/
 /static/
 /staticfiles/
 /*/settings.py
