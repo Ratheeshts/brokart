@@ -4,7 +4,6 @@
 #     https://www.atlassian.com/git/tutorials/saving-changes/gitignore
 
 # Node artifact files
-migrations
 __pycache__
 # Compiled Java class files
 *.class
