@@ -13,7 +13,6 @@ __pycache__
 
 # Log files
 *.log
-migrations/
 # Package files
 *.jar
 
@@ -43,7 +42,5 @@ Thumbs.db
 *.flv
 *.mov
 *.wmv
-/images/
-/static/
-/staticfiles/
+
 /*/settings.py
